@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayanthan SM | Cybersecurity Portfolio</title>
+    <meta name="description" content="Sayanthan SM - Cybersecurity student specializing in penetration testing, network security, and ethical hacking. Explore projects, skills, and certifications.">
+    <meta name="keywords" content="cybersecurity, penetration testing, ethical hacking, portfolio, Sayanthan SM">
+    <meta name="author" content="Sayanthan SM">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>S<span class="logo-dot">.</span>SM<span class="logo-bracket">/&gt;</span>
+            </a>
+            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+                <li><a href="#contact" class="nav-link cta-link" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-greeting">
+                    <span class="greeting-line"></span>
+                    <span class="greeting-text">Hello, I'm</span>
+                </div>
+                <h1 class="hero-name">
+                    <span class="name-first">Sayanthan</span>
+                    <span class="name-last">SM</span>
+                </h1>
+                <div class="hero-title">
+                    <span class="title-prefix">&gt;&nbsp;</span>
+                    <span id="typed-text" class="typed-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Cybersecurity student focused on Networking, Penetration Testing, and System Security. 
+                    Proficient in Python and C with hands-on experience solving <strong>100+ CTF challenges</strong> 
+                    and participating in <strong>10+ hackathons</strong>.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span class="btn-icon">&#9881;</span> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span class="btn-icon">&#9993;</span> Get in Touch
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="100">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">CTF Challenges</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Hackathons</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring ring-2"></div>
+                    <img src="profile_avatar.png" alt="Sayanthan SM" class="avatar-img">
+                    <div class="avatar-badge">
+                        <span class="badge-icon">&#128274;</span>
+                    </div>
+                </div>
+                <div class="floating-cards">
+                    <div class="float-card card-1">
+                        <span class="fc-icon">&#128737;</span>
+                        <span class="fc-text">Pen Testing</span>
+                    </div>
+                    <div class="float-card card-2">
+                        <span class="fc-icon">&#128421;</span>
+                        <span class="fc-text">DevSecOps</span>
+                    </div>
+                    <div class="float-card card-3">
+                        <span class="fc-icon">&#127760;</span>
+                        <span class="fc-text">Network Sec</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a <strong>Cybersecurity student</strong> at <strong>Amrita Vishwa Vidyapeetham, Coimbatore</strong>, 
+                    pursuing a B.Tech in Computer Science with a Cyber Security specialization (since August 2023).</p>
+                    <p>My expertise spans <strong>web application security</strong>, <strong>vulnerability assessment</strong>, 
+                    <strong>network fundamentals</strong>, and <strong>Linux environments</strong>. I'm passionate about applying 
+                    offensive security techniques and analytical skills to identify vulnerabilities and strengthen system defenses.</p>
+                    <p>From building IoT honeypots to implementing CI/CD secret detection gates, I love working on projects 
+                    that sit at the intersection of development and security.</p>
+                </div>
+                <div class="about-info">
+                    <div class="info-card">
+                        <div class="info-icon">&#127891;</div>
+                        <div class="info-details">
+                            <h3>Education</h3>
+                            <p>B.Tech in Computer Science</p>
+                            <p class="info-sub">Cyber Security Specialization</p>
+                            <p class="info-sub">Amrita Vishwa Vidyapeetham</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">&#128205;</div>
+                        <div class="info-details">
+                            <h3>Location</h3>
+                            <p>Erode, India</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">&#128161;</div>
+                        <div class="info-details">
+                            <h3>Focus Areas</h3>
+                            <p>Offensive Security</p>
+                            <p class="info-sub">Penetration Testing & CTF</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-role">
+                                <h3>Backend Developer Intern</h3>
+                                <span class="timeline-company">Springer Capital</span>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Nov 2025 – Dec 2025</span>
+                                <span class="timeline-location">Remote, India</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>
+                                <span class="detail-bullet">&#9656;</span>
+                                Implemented security measures within backend systems to improve resistance against intrusion.
+                            </li>
+                            <li>
+                                <span class="detail-bullet">&#9656;</span>
+                                Optimized database queries for scalability and resolved critical bugs identified during testing.
+                            </li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Backend Security</span>
+                            <span class="tag">Database Optimization</span>
+                            <span class="tag">Bug Resolution</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-icon-wrapper">
+                        <div class="project-icon">&#128270;</div>
+                        <div class="project-glow"></div>
+                    </div>
+                    <div class="project-number">01</div>
+                    <h3 class="project-title">CI/CD Secret Detection Gate</h3>
+                    <p class="project-desc">Implemented a shift-left policy-as-code security gate to detect hardcoded secrets in CI/CD pipelines. Enforced configurable rules to prevent credential leaks and provided automated remediation guidance.</p>
+                    <div class="project-tags">
+                        <span>DevSecOps</span>
+                        <span>CI/CD</span>
+                        <span>Policy-as-Code</span>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-icon-wrapper">
+                        <div class="project-icon">&#128375;</div>
+                        <div class="project-glow"></div>
+                    </div>
+                    <div class="project-number">02</div>
+                    <h3 class="project-title">IoT Honeypot with Dashboard</h3>
+                    <p class="project-desc">Built an IoT honeypot to capture real-world attacks and log malicious activity. Developed a React-Flask dashboard to visualize attack vectors and IP origins in real time.</p>
+                    <div class="project-tags">
+                        <span>IoT Security</span>
+                        <span>React</span>
+                        <span>Flask</span>
+                        <span>Honeypot</span>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-icon-wrapper">
+                        <div class="project-icon">&#128179;</div>
+                        <div class="project-glow"></div>
+                    </div>
+                    <div class="project-number">03</div>
+                    <h3 class="project-title">Secure Payment Mobile App</h3>
+                    <p class="project-desc">Developed a secure payment application with biometric authentication and voice confirmation. Implemented multi-factor authentication logic to prevent unauthorized transactions.</p>
+                    <div class="project-tags">
+                        <span>Mobile Security</span>
+                        <span>Biometrics</span>
+                        <span>MFA</span>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-icon-wrapper">
+                        <div class="project-icon">&#128202;</div>
+                        <div class="project-glow"></div>
+                    </div>
+                    <div class="project-number">04</div>
+                    <h3 class="project-title">Job-Based Data Extraction API</h3>
+                    <p class="project-desc">Designed an asynchronous API to handle complex data retrieval tasks efficiently. Engineered scalable endpoints capable of processing large datasets with low latency.</p>
+                    <div class="project-tags">
+                        <span>API Design</span>
+                        <span>Async</span>
+                        <span>Scalability</span>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-icon-wrapper">
+                        <div class="project-icon">&#9939;</div>
+                        <div class="project-glow"></div>
+                    </div>
+                    <div class="project-number">05</div>
+                    <h3 class="project-title">Blockchain Verified Senders</h3>
+                    <p class="project-desc">Developed a smart contract to verify email senders and prevent spoofing attacks. Maintained immutable identity records using blockchain technology.</p>
+                    <div class="project-tags">
+                        <span>Blockchain</span>
+                        <span>Solidity</span>
+                        <span>Anti-Spoofing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-categories">
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="category-header">
+                        <div class="category-icon">&#128737;</div>
+                        <h3>Core Expertise</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Web Application Security</span>
+                        <span class="skill-pill">Network Security</span>
+                        <span class="skill-pill">Ethical Hacking</span>
+                        <span class="skill-pill">Digital Forensics</span>
+                        <span class="skill-pill">DevSecOps</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon">&#128295;</div>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Firewall Configuration</span>
+                        <span class="skill-pill">Wireshark</span>
+                        <span class="skill-pill">Burp Suite</span>
+                        <span class="skill-pill">Metasploit</span>
+                        <span class="skill-pill">Git</span>
+                        <span class="skill-pill">Docker</span>
+                        <span class="skill-pill">Linux</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon">&#128187;</div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">C</span>
+                        <span class="skill-pill">SQL</span>
+                        <span class="skill-pill">JavaScript (React)</span>
+                        <span class="skill-pill">Solidity</span>
+                        <span class="skill-pill">Haskell</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;certifications&gt;</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card" data-aos="fade-up">
+                    <div class="cert-badge">
+                        <span class="cert-icon">&#128196;</span>
+                        <div class="cert-status in-progress">In Progress</div>
+                    </div>
+                    <h3>CompTIA Security+</h3>
+                    <p>Industry-standard cybersecurity certification covering network security, compliance, and operational security.</p>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-badge">
+                        <span class="cert-icon">&#9989;</span>
+                        <div class="cert-status completed">Completed</div>
+                    </div>
+                    <h3>Cisco Ethical Hacking</h3>
+                    <p>Comprehensive certification covering ethical hacking methodologies, tools, and techniques.</p>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-badge">
+                        <span class="cert-icon">&#9989;</span>
+                        <div class="cert-status completed">Completed</div>
+                    </div>
+                    <h3>Cisco Networking Fundamentals</h3>
+                    <p>Foundation certification in networking concepts, protocols, and infrastructure management.</p>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-badge">
+                        <span class="cert-icon">&#9989;</span>
+                        <div class="cert-status completed">Completed</div>
+                    </div>
+                    <h3>Advent of Cyber 2025</h3>
+                    <p>TryHackMe's annual cybersecurity challenge covering diverse security topics and hands-on labs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-intro">Interested in working together or have a question? Feel free to reach out!</p>
+                    <div class="contact-methods">
+                        <a href="mailto:sayanthansm66@gmail.com" class="contact-method" id="contact-email">
+                            <div class="method-icon">&#9993;</div>
+                            <div class="method-details">
+                                <span class="method-label">Email</span>
+                                <span class="method-value">sayanthansm66@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+917845883249" class="contact-method" id="contact-phone">
+                            <div class="method-icon">&#128222;</div>
+                            <div class="method-details">
+                                <span class="method-label">Phone</span>
+                                <span class="method-value">+91 7845883249</span>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-method" id="contact-linkedin">
+                            <div class="method-icon">&#128101;</div>
+                            <div class="method-details">
+                                <span class="method-label">LinkedIn</span>
+                                <span class="method-value">Connect with me</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-method" id="contact-github">
+                            <div class="method-icon">&#128187;</div>
+                            <div class="method-details">
+                                <span class="method-label">GitHub</span>
+                                <span class="method-value">View my repos</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="form-name">Name</label>
+                        <input type="text" id="form-name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-email">Email</label>
+                        <input type="email" id="form-email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">Message</label>
+                        <textarea id="form-message" name="message" placeholder="Your message..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" id="form-submit" class="btn btn-primary btn-full">
+                        <span class="btn-icon">&#128640;</span> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>S<span class="logo-dot">.</span>SM<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">Designed & Built by Sayanthan SM &copy; 2026</p>
+                <div class="footer-links">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                    <a href="mailto:sayanthansm66@gmail.com" aria-label="Email">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
